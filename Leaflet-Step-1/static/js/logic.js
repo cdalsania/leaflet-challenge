@@ -20,3 +20,13 @@ function generateMap(earthquakeData) {
         id: "mapbox/streets-v11",
         accessToken: API_KEY
     }).addTo(myMap);
+
+    // Returns color based on magnitude
+    function getColor(d) {
+        return d >= 5 ? '#7a0177' :
+            d >= 4 ? '#c51b8a' :
+            d >= 3 ? '#f768a1' :
+            d >= 2 ? '#fa9fb5' :
+            d >= 1 ? '#fcc5c0' :
+            '#feebe2';
+    }
