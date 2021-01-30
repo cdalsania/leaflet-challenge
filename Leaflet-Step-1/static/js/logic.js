@@ -45,3 +45,8 @@ function generateMap(earthquakeData) {
         onEachFeature: onEachFeature
     }).addTo(myMap);
     var legend = L.control({ position: 'bottomright' });
+
+    legend.onAdd = function(myMap) {
+            // Display legend at bottom right corner of the map
+            var div = L.DomUtil.create('div', 'info legend'),
+                grades = [0, 1, 2, 3, 4, 5];
