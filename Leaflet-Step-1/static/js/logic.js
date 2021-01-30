@@ -62,3 +62,12 @@ function generateMap(earthquakeData) {
     };
 
     legend.addTo(myMap);
+
+    // Define a function we want to run once for each feature in the features array
+    // Give each feature a popup describing the place and time of the earthquake
+    function onEachFeature(feature, layer) {
+        layer.bindPopup("<h3> Magnitude: " + feature.properties.mag + "</h3><br/><h3>" + feature.properties.place +
+            "</h3><hr><p>" + new Date(feature.properties.time) + "</p>");
+    }
+
+}
