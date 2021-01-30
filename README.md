@@ -8,14 +8,18 @@ Leaflet-Step-1
 
 ![Advance](/Images/Leaflet-Step-1.PNG)
 
+Leaflet-Step-2
+
+![Advance](/Images/Leaflet-Step-2.png)
 
 Programming Language / Applications - Used
-HTML
-JavaScript
-D3.js
-Leaflet
-CSS
-GeoJSON
+
+    * HTML
+    * JavaScript
+    * D3.js
+    * Leaflet
+    * CSS
+    * GeoJSON
 
 Contributors
 
