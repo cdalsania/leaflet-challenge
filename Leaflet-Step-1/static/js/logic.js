@@ -30,3 +30,18 @@ function generateMap(earthquakeData) {
             d >= 1 ? '#fcc5c0' :
             '#feebe2';
     }
+    // Creating a GeoJSON layer with the retrieved data
+    L.geoJson(earthquakeData, {
+        pointToLayer: function(feature, latlng) {
+            return L.circleMarker(latlng, {
+                radius: feature.properties.mag * 3,
+                fillColor: getColor(feature.properties.mag),
+                color: "#000",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 1
+            });
+        },
+        onEachFeature: onEachFeature
+    }).addTo(myMap);
+    var legend = L.control({ position: 'bottomright' });
