@@ -6,7 +6,7 @@ The USGS is interested in building a new set of tools to visualize their earthqu
 
 Leaflet-Step-1
 
-![Advance](../Images/Leaflet-Step-1)
+![Advance](/Images/Leaflet-Step-1.PNG)
 
 
 Programming Language / Applications - Used
